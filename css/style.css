@@ -1,0 +1,146 @@
+* {
+    /*border-style: dashed;
+    margin: 0;*/
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        'header header header'
+        'nav nav nav'
+        'slider slider slider'
+        'section section section'
+        'footer footer footer'
+    ;
+    column-gap: 10px;
+    align-items: center;
+}
+
+/*
+    header
+*/
+.header {
+    grid-area: header;
+    background-color: #E1E365;
+    color: #000000;
+
+}
+
+ul {
+    list-style-type: none;
+
+
+}
+
+li {
+    display: inline;
+}
+
+/*
+    nav
+*/
+
+
+.nav1 {
+
+    padding: 0px;
+    float: left;
+
+}
+
+
+.nav3 {
+
+
+    float: right;
+
+
+}
+
+.nav {
+
+    grid-area: nav;
+    background-color: #ffffff;
+    width: 100%;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+
+/*
+    section
+*/
+.section {
+
+    background-color: white;
+}
+
+/*
+   footer
+*/
+.footer {
+    grid-area: footer;
+    background-color: #E1E365;
+}
+
+/*Botones*/
+
+.button {
+    background-color: #E1E365;
+    border: none;
+    color: #fff;
+    border-radius: 15px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+
+
+.custom {
+    width: 160px !important;
+    
+}
+.custom2 {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px !important;
+    margin-left: 50%;
+}
+
+.btn-success {
+    --bs-btn-color: rgb(0, 0, 0) !important;
+    --bs-btn-bg: #E1E365 !important;
+ 
+}
+
+.form {
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+   
+    
+}
+
+label{
+
+    
+    
+}
+/*Formulario */
+
+
+
+
+/******************* MEDIA QUERIES ******************/
