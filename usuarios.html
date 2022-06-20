@@ -40,7 +40,7 @@
 
                 <div class="row mb-3">
                     <a href="usuarios.html" class="btn1">
-                        <button onclick=""type="button" class="btn btn-success custom">Usuarios</button>
+                        <button onclick="" type="button" class="btn btn-success custom">Usuarios</button>
                     </a>
                 </div>
 
@@ -51,103 +51,129 @@
                 </div>
 
                 <div class="row mb-3">
-                    <a href="retirarv.html" class="btn1"><button type="button" class="btn btn-success custom">Retirar Vehículo</button>
+                    <a href="retirarv.html" class="btn1"><button type="button" class="btn btn-success custom">Retirar
+                            Vehículo</button>
                     </a>
                 </div>
 
                 <div class="row mb-3">
-                    <a  href="pagos.html" class="btn1"><button type="button" class="btn btn-success custom">Registrar Pago</button></a>
+                    <a href="pagos.html" class="btn1"><button type="button" class="btn btn-success custom">Registrar
+                            Pago</button></a>
                 </div>
 
                 <div class="row mb-3">
-                    <a href="novedad.html" class="btn1"><button type="button" class="btn btn-success custom">Registrar Novedad</button>
+                    <a href="novedad.html" class="btn1"><button type="button" class="btn btn-success custom">Registrar
+                            Novedad</button>
                     </a>
                 </div>
 
                 <div class="row mb-3">
-                    <a href="gestion.html" class="btn1"><button type="button" class="btn btn-success custom">Gestión de Celdas</button>
+                    <a href="gestion.html" class="btn1"><button type="button" class="btn btn-success custom">Gestión de
+                            Celdas</button>
                     </a>
                 </div>
             </div>
         </section>
 
+        <!--Formulaario,combianar con php -->
+        <form action="bdAutos.php" method="POST">
+            <section>
 
-        <section>
 
-            <div class="form">
-                <!-- formulario -->
 
-                <div class="row mb-3">
-                    <label for="colFormLabel" class="col-sm-2 col-form-label">Nombre</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control" id="colFormLabel"
-                            placeholder="Ingrese nombre de Usuario">
+                <div class="form">
+                    <!-- formulario -->
+
+                    <div class="row mb-3">
+                        <label for="colFormLabel" class="col-sm-2 col-form-label" for="nom">Nombre</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="colFormLabel" name="nombre"
+                                placeholder="Ingrese nombre de Usuario">
+                        </div>
                     </div>
+
+                    <div class="row mb-3">
+                        <label for="colFormLabel" class="col-sm-2 col-form-label" for="ced">Cédula</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="colFormLabel" name="cedula"
+                                placeholder="Ingresar Cédula del usuario">
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <label for="colFormLabel" class="col-sm-2 col-form-label">Dirección</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="colFormLabel" name="direccion"
+                                placeholder="Ingresar dirección del usuario">
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <label for="colFormLabel" class="col-sm-2 col-form-label">Teléfono</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="colFormLabel" name="telefono"
+                                placeholder="Ingresar Numero de télefono del usuario">
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <label for="colFormLabel" class="col-sm-2 col-form-label">Placa</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="colFormLabel" name="placa"
+                                placeholder="Ingresar placa del vehículo">
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <label for="colFormLabel" class="col-sm-2 col-form-label" >Modelo</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="colFormLabel" name="modelo"
+                                placeholder="Ingresar marca del Vehículo">
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <label for="colFormLabel" class="col-sm-2 col-form-label" >Color</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="colFormLabel" name="color"
+                                placeholder="Ingresar color del Vehículo">
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <label for="colFormLabel" class="col-sm-2 col-form-label">Estado</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="colFormLabel" name="estado"
+                                placeholder="Ingresar Estado del Vehículo">
+                        </div>
+                    </div>
+
+
                 </div>
 
-                <div class="row mb-3">
-                    <label for="colFormLabel" class="col-sm-2 col-form-label">Cédula</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control" id="colFormLabel"
-                            placeholder="Ingresar Cédula del usuario">
-                    </div>
-                </div>
+            </section>
 
-                <div class="row mb-3">
-                    <label for="colFormLabel" class="col-sm-2 col-form-label">Dirección</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control" id="colFormLabel"
-                            placeholder="Ingresar dirección del usuario">
+            <section>
+                <div>
+                    <div class="row mb-3">
+                        <div class="btn1"><button type="submit" class="btn btn-success custom2" name="ejecutar">GUARDAR</button></div>
+                       
+                    </div>
+    
+                    <div class="row mb-3">
+                        <div class="btn1"><button type="button" class="btn btn-success custom2">CANCELAR</button></div>
                     </div>
                 </div>
+    
+            </section>
 
-                <div class="row mb-3">
-                    <label for="colFormLabel" class="col-sm-2 col-form-label">Teléfono</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control" id="colFormLabel"
-                            placeholder="Ingresar Numero de télefono del usuario">
-                    </div>
-                </div>
-
-                <div class="row mb-3">
-                    <label for="colFormLabel" class="col-sm-2 col-form-label">Placa</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control" id="colFormLabel"
-                            placeholder="Ingresar placa del vehículo">
-                    </div>
-                </div>
-
-                <div class="row mb-3">
-                    <label for="colFormLabel" class="col-sm-2 col-form-label">Modelo</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control" id="colFormLabel"
-                            placeholder="Ingresar marca del Vehículo">
-                    </div>
-                </div>
-
-                <div class="row mb-3">
-                    <label for="colFormLabel" class="col-sm-2 col-form-label">Color</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control" id="colFormLabel"
-                            placeholder="Ingresar color del Vehículo">
-                    </div>
-                </div>
-
-                <div class="row mb-3">
-                    <label for="colFormLabel" class="col-sm-2 col-form-label">Estado</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control" id="colFormLabel"
-                            placeholder="Ingresar Estado del Vehículo">
-                    </div>
-                </div>
-            </div>
-        </section>
+        </form>
 
         <!-- Botones guardar y cancelar  -->
         <section>
             <div>
                 <div class="row mb-3">
-                    <div class="btn1"><button type="button" class="btn btn-success custom2">GUARDAR</button></div>
+                    <div class="btn1"><button type="submit" class="btn btn-success custom2">GUARDAR</button></div>
                 </div>
 
                 <div class="row mb-3">
@@ -160,9 +186,10 @@
         <!-- footer -->
         <footer class="footer">
             <div class="foot">
-                Duvan Henao, Julian Morales, Alberto Gómez, Alejandro Ocampo, Anyela Caicedo &copy; <span id="year">2022</span>
+                Duvan Henao, Julian Morales, Alberto Gómez, Alejandro Ocampo, Anyela Caicedo &copy; <span
+                    id="year">2022</span>
             </div>
-            
+
         </footer>
     </main>
     <script src="js/script.js"></script>
